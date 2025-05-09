@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = 'AIzaSyAxavMePUTJFVM5_dtGLYn1rXJu6mfXd7o'; // <<< Ersetze das hier
+    const apiKey = 'AIzaSyAxavMePUTJFVM5_dtGLYn1rXJu6mfXd7o';
+ // <<< Ersetze das hier
     const channelId = 'UCgWo7koDNf6X6GvPYKAzDFA';
     const maxResults = 1;
 
