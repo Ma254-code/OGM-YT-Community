@@ -177,3 +177,50 @@ footer {
     background-color: #cc0000; /* Dunkleres Rot bei Hover */
 }
 
+
+/* Grundstil des Buttons */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff0000; /* Roter Hintergrund */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Stil des Buttons bei Hover */
+.btn:hover {
+    background-color: #cc0000; /* Dunkleres Rot */
+    transform: scale(1.1); /* Vergrößern bei Hover */
+}
+
+/* Animationseffekte für den Button */
+.animated-btn {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #ff3333;
+    transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animated-btn:hover::before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
