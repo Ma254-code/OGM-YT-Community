@@ -162,3 +162,18 @@ footer {
     color: black;
 }
 
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Rot */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #cc0000; /* Dunkleres Rot bei Hover */
+}
+
