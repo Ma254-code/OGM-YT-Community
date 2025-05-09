@@ -113,3 +113,52 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+
+/* Team-Rollen */
+.roles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.role {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: fit-content;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Farben für die einzelnen Rollen */
+.owner {
+    background-color: #e60000;
+    color: white;
+}
+
+.admin {
+    background-color: #ff6600;
+    color: white;
+}
+
+.mod {
+    background-color: #0066ff;
+    color: white;
+}
+
+.support {
+    background-color: #00cc99;
+    color: white;
+}
+
+.vip {
+    background-color: #ffd700;
+    color: black;
+}
+
