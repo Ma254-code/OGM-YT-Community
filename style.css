@@ -1,4 +1,4 @@
-/* Allgemeine Seite */
+/* Grundstil */
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +7,21 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000; /* Hintergrund schwarz */
+    background-color: #000; /* GANZ schwarz */
     color: #fff;
     overflow-x: hidden;
     height: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: flex-start;
 }
 
 /* Header */
 header {
     text-align: center;
     margin-bottom: 40px;
+    background-color: #000; /* schwarz */
 }
 
 .logo-container {
@@ -33,22 +34,18 @@ header {
     animation: logoAnimation 2s ease-in-out infinite alternate;
 }
 
-/* Animation für das Logo */
 @keyframes logoAnimation {
     0% { transform: rotate(0deg); opacity: 1; }
     100% { transform: rotate(360deg); opacity: 0.8; }
 }
 
-/* Haupttitel */
 h1 {
     font-size: 3rem;
-    text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: bold;
     animation: textAnimation 3s ease-out;
 }
 
-/* Animation für den Titel */
 @keyframes textAnimation {
     0% { transform: translateY(-50px); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
@@ -56,13 +53,14 @@ h1 {
 
 /* Sektionen */
 section {
-    background-color: rgba(0, 0, 0, 0.8); /* Halbdurchsichtiger Hintergrund */
+    background-color: #000; /* GANZ schwarz */
+    color: #fff;
     border-radius: 10px;
     padding: 30px;
     margin: 20px 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Überschriften */
 h2 {
     color: #fff;
     font-size: 2rem;
@@ -81,11 +79,6 @@ a:hover {
     transform: scale(1.1);
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
 /* Buttons */
 .btn {
     background: #ff007f;
@@ -94,7 +87,6 @@ ul {
     border-radius: 50px;
     font-size: 1.5rem;
     font-weight: bold;
-    text-align: center;
     display: inline-block;
     transition: all 0.3s ease;
 }
@@ -107,22 +99,17 @@ ul {
 /* Team */
 .team {
     text-align: center;
-    color: #fff;
     font-size: 1.2rem;
 }
 
 /* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000; /* GANZ schwarz */
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
     font-size: 1rem;
-}
-
-footer p {
-    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
