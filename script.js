@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const apiKey = 'AIzaSyAxavMePUTJFVM5_dtGLYn1rXJu6mfXd7o'; // 👈 Deinen YouTube Data API Key hier einfügen
-    const channelId = 'UCgWo7koDNf6X6GvPYKAzDFA'; // OGM-YT Channel-ID
+    const channelId = 'UCspuLeuL8mPLrtbA46Ax8NA'; // OGM-YT Channel-ID
     const maxResults = 1;
 
     const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${maxResults}`;
