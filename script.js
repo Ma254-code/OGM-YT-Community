@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = 'AIzaSyAxavMePUTJFVM5_dtGLYn1rXJu6mfXd7o'; // 👈 Deinen YouTube Data API Key hier einfügen
+    const apiKey = 'AIzaSyAxavMePUTJFVM5_dtGLYn1rXJu6mfXd7o'; // Dein YouTube Data API Key
     const channelId = 'UCspuLeuL8mPLrtbA46Ax8NA'; // OGM-YT Channel-ID
     const maxResults = 1;
 
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log("API Antwort:", data); // 👈 Zeigt die komplette API-Antwort in der Browser-Konsole
+            console.log("API Antwort:", data);
 
             if (!data.items || data.items.length === 0) {
                 document.getElementById("latestVideoLink").textContent = "Kein Video gefunden oder API-Fehler.";
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const latestVideo = data.items[0];
 
-            // Falls es kein Video ist (z. B. ein Community-Post)
             if (!latestVideo.id || !latestVideo.id.videoId) {
                 document.getElementById("latestVideoLink").textContent = "Kein gültiges Video gefunden.";
                 return;
@@ -34,3 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("latestVideoLink").textContent = "Fehler beim Abrufen des Videos.";
         });
 });
+
