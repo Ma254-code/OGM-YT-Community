@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #333;
+}
+h1 {
+  color: #d9d9d9;
+}
+console.log("Die Webseite ist geladen!");
+
+
+/* Logo oben rechts positionieren */
+.logo {
+    position: absolute;  /* Ermöglicht eine freie Positionierung */
+    top: 20px;           /* Abstand vom oberen Rand */
+    right: 20px;         /* Abstand vom rechten Rand */
+    width: 150px;        /* Breite des Logos */
+    height: auto;        /* Automatische Höhe, um das Seitenverhältnis zu bewahren */
+}
