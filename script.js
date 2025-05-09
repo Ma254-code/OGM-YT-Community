@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const channelId = 'UCspuLeuL8mPLrtbA46Ax8NA'; // OGM-YT Channel-ID
     const maxResults = 1;
 
-    const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${maxResults}`;
-
+    
     fetch(url)
         .then(response => response.json())
         .then(data => {
